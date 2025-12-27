@@ -1,0 +1,8 @@
+Ansible Cheat Sheet
+
+
+
+ansible-playbook playbook.yml --check
+ansible-playbook playbook.yml --start-at-task "Start httpd Service" // will skip others tasks and start with Start httpd service name task.
+ansible-playbook playbook.yml --tags "install" // will run playbook with install tag. 
+ansible-playbook playbook.yml --skip-tags "install" // will skip the run tag task. 
